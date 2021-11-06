@@ -34,6 +34,10 @@ class MainScreen extends StatelessWidget {
                 ),
               ),
             ),
+            Divider(
+              height: 1.0,
+              color: Colors.blueGrey[900],
+            ),
             Expanded(
               flex: 1,
               child: Row(
@@ -50,23 +54,25 @@ class MainScreen extends StatelessWidget {
               flex: 5,
               child: Container(
                 alignment: Alignment.center,
-                child: Text('Hello'),
+                child: Text('Beautiful clock here'),
               ),
             ),
             Expanded(
               flex: 2,
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Column(
                     children: [
                       Expanded(
+                        flex: 1,
                         child: Text(
                           '00:00',
-                          style: GoogleFonts.notoSans(fontSize: 40.0),
+                          style: GoogleFonts.notoSans(fontSize: 46.0),
                         ),
                       ),
                       Expanded(
+                        flex: 2,
                         child: TitleButton(
                           buttonText: 'Bedtime',
                           buttonColor: kTeal,
@@ -79,12 +85,14 @@ class MainScreen extends StatelessWidget {
                   Column(
                     children: [
                       Expanded(
+                        flex: 1,
                         child: Text(
                           '00:00',
-                          style: GoogleFonts.notoSans(fontSize: 40),
+                          style: GoogleFonts.notoSans(fontSize: 46),
                         ),
                       ),
                       Expanded(
+                        flex: 2,
                         child: TitleButton(
                             buttonText: 'Wake Up',
                             buttonIcon: Icons.alarm,

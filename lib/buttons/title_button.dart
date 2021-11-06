@@ -15,21 +15,25 @@ class TitleButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(
-          buttonText,
-          style: GoogleFonts.notoSans(fontSize: buttonSize, color: buttonColor),
-        ),
-        SizedBox(
-          height: 8,
-        ),
-        Icon(
-          buttonIcon,
-          color: buttonColor,
-          size: buttonSize * 1.6,
-        ),
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(top: 12.0),
+      child: Column(
+        children: [
+          Text(
+            buttonText,
+            style:
+                GoogleFonts.notoSans(fontSize: buttonSize, color: buttonColor),
+          ),
+          SizedBox(
+            height: 6,
+          ),
+          Icon(
+            buttonIcon,
+            color: buttonColor,
+            size: buttonSize * 1.6,
+          ),
+        ],
+      ),
     );
   }
 }
