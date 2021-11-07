@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class TitleButton extends StatelessWidget {
-  TitleButton(
+class TitleButtonCard extends StatelessWidget {
+  TitleButtonCard(
       {required this.buttonText,
       required this.buttonIcon,
       required this.buttonColor,

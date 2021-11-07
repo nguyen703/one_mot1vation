@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:one_mot1vation/buttons/switch_button.dart';
 import 'package:one_mot1vation/constants.dart';
 import 'package:one_mot1vation/buttons/title_button.dart';
+import 'package:one_mot1vation/buttons/days_in_week.dart';
 
 class MainScreen extends StatelessWidget {
   @override
@@ -41,12 +42,15 @@ class MainScreen extends StatelessWidget {
             Expanded(
               flex: 1,
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(
-                    Icons.palette_rounded,
-                    color: kWhite,
-                  ),
-                  Icon(Icons.ac_unit, color: kWhite),
+                  Expanded(child: DaysInWeek(weekDay: 'M')),
+                  Expanded(child: DaysInWeek(weekDay: 'T')),
+                  Expanded(child: DaysInWeek(weekDay: 'W')),
+                  Expanded(child: DaysInWeek(weekDay: 'T')),
+                  Expanded(child: DaysInWeek(weekDay: 'F')),
+                  Expanded(child: DaysInWeek(weekDay: 'S')),
+                  Expanded(child: DaysInWeek(weekDay: 'S')),
                 ],
               ),
             ),
@@ -73,7 +77,7 @@ class MainScreen extends StatelessWidget {
                       ),
                       Expanded(
                         flex: 2,
-                        child: TitleButton(
+                        child: TitleButtonCard(
                           buttonText: 'Bedtime',
                           buttonColor: kTeal,
                           buttonIcon: Icons.bed,
@@ -93,7 +97,7 @@ class MainScreen extends StatelessWidget {
                       ),
                       Expanded(
                         flex: 2,
-                        child: TitleButton(
+                        child: TitleButtonCard(
                             buttonText: 'Wake Up',
                             buttonIcon: Icons.alarm,
                             buttonColor: kTeal,

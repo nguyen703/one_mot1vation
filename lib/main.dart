@@ -11,9 +11,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-          scaffoldBackgroundColor: kDarkBlue,
-          primaryColor: kDarkBlue,
-          textTheme: TextTheme(bodyText2: TextStyle(color: kWhite))),
+        scaffoldBackgroundColor: kDarkBlue,
+        primaryColor: kDarkBlue,
+        iconTheme: IconThemeData(color: kWhite),
+        textTheme: TextTheme(
+          bodyText2: TextStyle(color: kWhite),
+        ),
+      ),
       home: MainScreen(),
     );
   }
