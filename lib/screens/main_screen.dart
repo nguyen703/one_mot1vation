@@ -18,6 +18,7 @@ class MainScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 10.0),
         child: Column(
+          // flex ratio: 1:1:5:2
           children: [
             Expanded(
               flex: 1,
